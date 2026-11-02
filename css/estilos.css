@@ -1,0 +1,406 @@
+/* Variables de colores */
+:root {
+  --azul-oscuro: #0a1f44;
+  --azul: #004dbb;
+  --rojo: #fe0015;
+  --azul-claro: #e8f0ff;
+  --gris: #6b7280;
+  --gris-claro: #f3f5f9;
+  --blanco: #ffffff;
+  --sombra: 0 4px 12px rgba(10, 31, 68, 0.10);
+}
+
+/* Estilos generales */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  background-color: var(--blanco);
+}
+
+.btn-primary {
+  background-color: var(--azul);
+  border-color: var(--azul);
+}
+
+.btn-primary:hover {
+  background-color: var(--azul-oscuro);
+  border-color: var(--azul-oscuro);
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: var(--azul-oscuro);
+  box-shadow: var(--sombra);
+}
+
+.logo {
+  height: 46px;
+}
+
+.nav-link {
+  margin: 0 5px;
+}
+
+.nav-link:hover {
+  color: #5b9bff !important;
+}
+
+.btn-carrito {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.btn-carrito:hover {
+  background-color: var(--blanco);
+  color: var(--azul-oscuro);
+}
+
+/* Banner de bienvenida */
+.banner {
+  background: linear-gradient(135deg, var(--azul-oscuro), #163a7a);
+  color: var(--blanco);
+  padding: 130px 0 70px;
+}
+
+.banner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.banner h1 span {
+  color: #5b9bff;
+}
+
+.banner p {
+  font-size: 1.15rem;
+  color: #d6e2ff;
+  margin-bottom: 30px;
+}
+
+.banner-img {
+  max-height: 430px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+}
+
+/* Secciones y títulos */
+.seccion {
+  padding: 70px 0;
+  scroll-margin-top: 60px;
+}
+
+.seccion-gris {
+  background-color: var(--gris-claro);
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+}
+
+.titulo-seccion::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--rojo);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: var(--gris);
+  max-width: 650px;
+  margin: 15px auto 35px;
+}
+
+/* Tarjetas de productos */
+.producto {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra);
+}
+
+.producto .card-img-top {
+  background-color: var(--blanco);
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.producto .categoria {
+  display: inline-block;
+  background-color: var(--azul-claro);
+  color: var(--azul);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+.producto .card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.producto .pie-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.producto .precio {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+}
+
+/* Sobre nosotros */
+.mascota {
+  max-height: 380px;
+  max-width: 100%;
+}
+
+.frase-mascota {
+  font-weight: 700;
+  color: var(--azul);
+  margin-top: 10px;
+}
+
+.info-card {
+  background-color: var(--blanco);
+  border-radius: 12px;
+  padding: 30px 25px;
+  text-align: center;
+  height: 100%;
+  box-shadow: var(--sombra);
+}
+
+.info-card i {
+  font-size: 2.5rem;
+  color: var(--azul);
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: var(--azul-oscuro);
+}
+
+.info-card p {
+  color: var(--gris);
+  margin-bottom: 0;
+}
+
+/* Sucursales */
+.lista-sucursales {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid #e5e7eb;
+}
+
+.sucursal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sucursal:hover {
+  background-color: var(--gris-claro);
+}
+
+.icono-sucursal {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.icono-sucursal.rojo { background-color: #ffe5e8; color: var(--rojo); }
+.icono-sucursal.azul { background-color: var(--azul-claro); color: var(--azul); }
+.icono-sucursal.gris { background-color: #eceef2; color: #1f2937; }
+
+.datos-sucursal {
+  flex-grow: 1;
+}
+
+.datos-sucursal h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.datos-sucursal p {
+  color: var(--gris);
+  margin-bottom: 0;
+}
+
+.como-llegar {
+  color: var(--azul);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.como-llegar:hover {
+  text-decoration: underline;
+}
+
+/* Formulario de contacto */
+.formulario {
+  background-color: var(--blanco);
+  padding: 30px;
+  border-radius: 12px;
+  border-top: 4px solid var(--azul);
+  box-shadow: var(--sombra);
+}
+
+.formulario .form-label {
+  font-weight: 600;
+}
+
+/* Carrito */
+.modal-header {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+.producto-carrito {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.producto-carrito img {
+  width: 50px;
+  border-radius: 6px;
+}
+
+#total-carrito {
+  color: var(--azul);
+}
+
+/* Aviso de confirmación */
+.aviso {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 14px 20px;
+  border-radius: 10px;
+  border-left: 5px solid var(--azul);
+  box-shadow: var(--sombra);
+  max-width: 320px;
+}
+
+.aviso.error {
+  border-left-color: #dc3545;
+}
+
+/* Pie de página */
+.footer {
+  background-color: var(--azul-oscuro);
+  color: #c7d2e6;
+  padding: 50px 0 20px;
+}
+
+.footer h4 {
+  color: var(--blanco);
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin-bottom: 8px;
+}
+
+.logo-footer {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footer hr {
+  border-color: #3a4d6e;
+}
+
+/* Media queries */
+
+/* Tablets */
+@media (max-width: 767px) {
+  .banner {
+    padding: 100px 0 50px;
+  }
+
+  .banner-img {
+    max-height: 300px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .seccion {
+    padding: 50px 0;
+  }
+
+  .formulario {
+    padding: 20px;
+  }
+
+  .sucursal {
+    flex-wrap: wrap;
+  }
+
+  .datos-sucursal {
+    flex-basis: 0;
+  }
+
+  .como-llegar {
+    width: 100%;
+    padding-left: 70px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 575px) {
+  .banner .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0 0 !important;
+  }
+
+  .aviso {
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+}
