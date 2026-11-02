@@ -6,6 +6,8 @@ Tienda virtual de productos tecnológicos (laptops, monitores, mouse, teclados y
 > Consolidado 1 · Producto Académico N.º 1 · Unidad 1 · Actividad individual.
 > Docente: Christian Alonso Vega Cervantes · NRC: 39409.
 
+**Ver la página:** https://juniorwilber.github.io/PA01_PROGRAMACION-WEB/
+
 ## Cómo abrir el proyecto
 
 - **Opción 1:** abrir `index.html` con doble clic en el navegador.
